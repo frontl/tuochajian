@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"><meta>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="XQ_drag.js"></script>
+		<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.drop{
+			width: 400px;
+			min-height: 200px;
+			display: block;
+			border: 1px solid #F05B4F;
+		}
+		.drag{
+			width: 100px;
+			height: 100px;
+			overflow: hidden;
+			display: inline-block;
+			border: 2px solid #000000;
+			line-height: 100px;
+			text-align: center;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="drop" xq_drop="true" style="background:#fe631a"></div>
+		<div class="drop" xq_drop="true" style="background:#fc83bc">
+			<div class="drag" xq_drag="true" id="1">
+				1
+			</div>
+			<div class="drag" xq_drag="true" id="2">
+				2
+			</div>
+		</div>
+		<div class="drop" xq_drop="true" style="background:#bca31a">
+			<div class="drag" xq_drag="true" id="3">
+				3
+			</div>
+			<div class="drag" xq_drag="true" id="4">
+				4
+			</div>
+		</div>
+	</body>
+</html>
